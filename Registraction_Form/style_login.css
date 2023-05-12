@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    color: #f5f6f7;
+    font-size: 18px;
+    background-image: url("/background.jpg")
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+form {
+    width: 80vw;
+    max-width: 600px;
+    min-width: 300px;
+    margin: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: #1b1b32;
+    box-shadow: 0 0 1em #1b1b32;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    margin: 14px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 0.5rem 0.5rem;
+    margin: 14px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 25px;
+}
+
