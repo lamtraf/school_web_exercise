@@ -1,0 +1,64 @@
+body {
+   margin: 0;
+   font-family: sans-serif;
+   background-color: aliceblue;
+}
+
+.header {
+   text-align: center;
+   text-transform: uppercase;
+   padding: 32px;
+   background-color: 0a0a23;
+   color: antiquewhite;
+   border-bottom: 4px solid #fdb347;
+}
+
+.container {
+   display: flex; /*flex là một kiểu dàn trang mà khi sử dụng nó sẽ tự cân đối kích thước của các thành phần để hiển thị trong mọi thiết bị*/
+   flex-direction: row; /*thuộc tính flex-direction quy định cách trình bày chính với các mục linh hoạt trong khung hình theo một trục chính, ở row: có nghĩa trục chạy từ trái sang phải*/
+   flex-wrap: wrap; /*điều chỉnh */
+   justify-content: center;
+   align-items: center;
+   gap: 16px;
+   max-width: 1400px;
+   margin: 0 auto;
+   padding: 20px 10px;
+   position: relative;
+   width: 50%;
+ }
+ 
+ .container img {
+   width: 500px;
+   height: 450px;
+   object-fit: cover;
+   border-radius: 10px;
+ }
+
+.overlay {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+   transition: .5s ease;
+   background-color: antiquewhite;
+}
+
+.container:hover .overlay {
+   opacity: 1;
+}
+
+.text {
+   color: black;
+   font-size: 18px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -webkit-transform: translate(-100%, -100%);
+   -ms-transform: translate(-100%, -100%);
+   transform: translate(-50%, -50%);
+   text-align: center;
+}
